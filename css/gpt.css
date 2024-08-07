@@ -1,0 +1,434 @@
+
+
+  body {
+    padding-top: 70px;
+    background-color: #ECF0F2;
+    margin: 0;
+  }
+
+  header {
+    position: fixed;
+    color: #ECF0F2;
+    width: 100%;
+    height: 70px;
+    background: #8D98A2;
+    padding: 20px 70px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100;
+  }
+
+  header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 70px;
+    list-style: none;
+  }
+
+  header .gNav .gNav-menu li {
+    list-style: none;
+    font-size: 24px;
+  }
+
+  header .gNav .gNav-menu li a {
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  /* ------------------------------------- */
+  .hamburger {
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hamburger .btn-gNav {
+    position: fixed;
+    top: 0;
+    margin-top: 23px;
+    right: 30px;
+    width: 30px;
+    height: 24px;
+    z-index: 12;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms;
+  }
+
+  .hamburger .btn-gNav span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #ECF0F2;
+    border-radius: 10px;
+    transition: all 400ms;
+  }
+
+  .hamburger .btn-gNav span:nth-child(1) {
+    top: 0;
+  }
+
+  .hamburger .btn-gNav span:nth-child(2) {
+    top: 10px;
+  }
+
+  .hamburger .btn-gNav span:nth-child(3) {
+    top: 20px;
+  }
+
+  .hamburger .btn-gNav.open span:nth-child(1) {
+    background: #ECF0F2;
+    top: 6px;
+    transform: rotate(-45deg);
+  }
+
+  .hamburger .btn-gNav.open span:nth-child(2),
+  .hamburger .btn-gNav.open span:nth-child(3) {
+    top: 6px;
+    background: #ECF0F2;
+    transform: rotate(45deg);
+  }
+
+  .btn-gNav {
+    display: none;
+  }
+
+  .gNav .gNav-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gNav .gNav-menu li {
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+
+  /* ------------------------------------- */
+  #top {
+    background: #ECF0F2;
+    height: 100vh;
+  }
+
+  .top_back {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  #top h1 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: bolder;
+  }
+
+  .introduce {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+  }
+
+  #work {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #work .work_de {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  #work .work_web {
+    width: 80%;
+  }
+
+  section {
+    width: 100%;
+    display: block;
+    margin: 0 2%;
+    position: relative;
+    height: 100vh;
+  }
+
+  /* nav menu---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+  /* side_button---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+  button {
+    outline: none;
+  }
+
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+
+  .page-main {
+    position: relative;
+  }
+
+  aside {
+    background-color: #928A6D;
+    width: 350px;
+    height: 100%;
+    top: 0;
+    margin-top: 70px;
+    left: -350px;
+    position: fixed;
+    z-index: 200;
+  }
+
+  form {
+    margin-top: 8px;
+    margin-left: 80px;
+    margin-right: 0;
+    width: auto;
+    color: #ECF0F2;
+  }
+
+  form > input, textarea {
+    width: 80%;
+    background-color: #8D98A2;
+    border-radius: 5px;
+  }
+
+  form > textarea {
+    height: 300px;
+  }
+
+  form .send {
+    padding: 8px;
+    text-align: center;
+    width: 80px;
+  }
+
+  form label {
+    margin: 2px;
+  }
+
+  #contact form {
+    color: #010101;
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+  }
+
+  #contact input, textarea {
+    width: 100%;
+  }
+
+  aside button {
+    background-color: #928A6D;
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    width: 52px;
+    height: 132px;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  /* Clearfix */
+  aside .clearfix:before,
+  aside .clearfix:after {
+    content: " ";
+    display: table;
+  }
+
+  aside .clearfix:after {
+    clear: both;
+  }
+
+  /* -----------------------------send button---------------------------------------------------------------------------------------------------------  */
+  .hover {
+    background-color: #8D98A2;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+  }
+
+  .hover:hover {
+    background-color: rgb(168, 119, 29);
+    border-radius: 5px;
+  }
+
+  /* -----------------------------x scroll---------------------------------------------------------------------------------------------------------  */
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  #about {
+    z-index: 50;
+  }
+
+  .scroll_container {
+    height: 200vh;
+  }
+
+  .horizontal_scroll {
+    position: absolute;
+    margin-top: 80px;
+    top: 0;
+    height: 100%;
+    width: 200vw;
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .scroll_contents {
+    height: 100%;
+    width: 100vw;
+  }
+
+  .sticky_wrap {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    margin-top: 80px;
+    height: 100vh;
+  }
+
+  .scroll_contents {
+    background-color: #ECF0F2;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: #242424;
+  }
+
+  .left {
+    margin-top: 3vh;
+    margin-left: 3vw;
+  }
+
+  .right {
+    text-align: right;
+    margin-top: 85vh;
+    margin-right: 5vw;
+  }
+
+  /* end x scroll----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+  /* timeline---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* TIMELINE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  .timeline {
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
+
+  .timeline ol {
+    font-size: 0;
+    width: 100vw;
+    padding: 250px 0;
+    transition: all 1s;
+  }
+
+  .timeline ol li {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    width: 160px;
+    height: 3px;
+    background: #928A6D;
+  }
+
+  .timeline ol li:last-child {
+    width: 280px;
+  }
+
+  .timeline ol li:not(:first-child) {
+    margin-left: 14px;
+  }
+
+  .timeline ol li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 1px);
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #8A8089;
+  }
+
+  .timeline ol li div {
+    position: absolute;
+    left: calc(100% + 7px);
+    width: 280px;
+    padding: 15px;
+    font-size: 1rem;
+    white-space: normal;
+    color: #242424;
+    background: white;
+  }
+
+  .timeline ol li div::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -7px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 7px 6px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .timeline ol li:nth-child(2n+1) div {
+    left: auto;
+    right: calc(100% + 7px);
+  }
+
+  .timeline ol li:nth-child(2n+1) div::before {
+    left: auto;
+    right: -7px;
+    transform: rotate(180deg) translateY(50%);
+  }
+
+  .timeline ol li.completed {
+    background: #f18a00;
+  }
+
+  .timeline ol li.completed div {
+    visibility: visible;
+    opacity: 1;
+    transition: all .25s ease-out;
+  }
+
+  /* FORM
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  #about ol {
+    padding: 200px 0;
+  }
+
+  /* end timeline---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
