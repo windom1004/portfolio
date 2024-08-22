@@ -4,9 +4,9 @@ $name=$_POST['name'];
 $email=$_POST['email'];
 $message=$_POST['message'];
 
-$dsn='mysql:host=localhost;dbname=id22207318_wwbo;charset=utf8';
-$user='id22207318_wwbo';
-$password='Kang-Kang-2024!';
+$dsn='';
+$user='';
+$password='';
 
 try{
   $db=new PDO($dsn,$user,$password);
