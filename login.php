@@ -1,9 +1,9 @@
 <?php
     session_start();
     if (isset($_POST['name'])&&isset($_POST['password'])) {
-        $dsn='mysql:host=localhost;dbname=id22207318_wwbo;charset=utf8';
-        $user='id22207318_wwbo';
-        $password='Kang-Kang-2024!';
+        $dsn='';
+        $user='';
+        $password='';
         try {
             $db = new PDO($dsn, $user, $password);
             $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
